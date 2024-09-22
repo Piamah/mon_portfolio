@@ -1,0 +1,423 @@
+/****** General ***********/
+body {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+
+/* A VOIR SI ON LAISSE */
+.main-container {
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.card {
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+.card img {
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 16px;
+}
+
+h2 {
+    display: flex;
+    color: #7d5932;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 45px;
+    margin: 50px 0px 0px 0px;
+}
+
+/* SECTION HEADER */
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    height: 120px;
+    background-color: #ead6bb;
+    border-bottom: 2px solid #dbc4ac;
+}
+
+.profile {
+    width: 15%;
+    border-radius: 50%;
+    position: absolute;
+    top: 30px;
+    left: 65px;
+    border: 20px solid white;
+
+}
+
+header nav ul {
+    display: flex;
+    gap: 25px;
+}
+
+header nav {
+    position: relative;
+    top: 50px;
+    left: -30px;
+    color: #7d5932;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 34.22px;
+    text-align: right;
+    text-decoration-line: none;
+}
+
+header nav li {
+    display: flex;
+}
+
+header nav li:hover {
+    color: #7d5932;
+}
+
+/* PARTIE MENU HAMBURGER */
+
+.side-menu {
+    display: none;
+}
+
+#openBtn {
+    display: none;
+}
+
+
+/* SECTION MAIN */
+
+/* MAIN TITLE */
+
+h1 {
+    display: flex;
+    justify-content: flex-end;
+    color: #7d5932;
+    font-family: Montserrat;
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 75px;
+    margin: 20px 0px 160px 280px;
+}
+
+
+/* SECTION MES SKILLS */
+
+.skills p {
+    display: flex;
+    color: #7d5932;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* SECTION ACTIVITES */
+
+.parcours p {
+    display: flex;
+    justify-content: flex-end;
+    color: #7d5932;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* PROJETS */
+.projet {
+    /* width: 300px; */
+    padding: 10px;
+}
+
+.card {
+    display: block;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+}
+
+.card-cover {
+    display: flex;
+    /* width: 100%; */
+    height: 35px;
+}
+
+.projet span {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #7d5932;
+    font-family: Montserrat;
+    line-height: 50px;
+}
+
+/* SECTION FOOTER */
+
+.footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 34.22px;
+    text-align: center;
+    background-color: #ead6bb;
+    margin-top: 40px;
+    border-top: 2px solid #dbc4ac;
+}
+
+footer a {
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    gap: 15px
+}
+
+.logos {
+    width: 20%;
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.logo-instagram {
+    width: 100%;
+}
+
+.logo-linkedin {
+    width: 100%;
+}
+
+.logo-discord {
+    width: 100%;
+}
+
+.logo-github {
+    width: 100%;
+}
+
+.footer p {
+    color: #7d5932;
+    text-decoration: overline;
+    position: relative;
+    top: -10px;
+    left: 5px;
+}
+
+
+
+/****** Media queries ***********/
+/* Medium devices (tablets, less/equal than 1024px) */
+@media (max-width: 1024px) {
+
+    /* SECTION HEADER */
+    header {
+        height: 90px;
+    }
+
+    header nav {
+        font-size: 17px;
+        top: 40px;
+        left: -20px;
+    }
+
+    header nav ul {
+        gap: 18px;
+        padding: 0px;
+    }
+
+    h1 {
+        margin: 20px 0px 80px 220px;
+    }
+
+    /* SECTION MAIN TITLE */
+
+
+    /* SECTION SKILLS */
+
+
+    /* SECTION PARCOURS */
+
+
+    /* SECTION PROJETS */
+    .projet h1 {
+        margin: 0px;
+    }
+
+    /* SECTION FOOTER */
+    .logos {
+        width: 45%;
+    }
+}
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767.98px) {
+
+    /* SECTION HEADER */
+    header {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .profile {
+        width: 25%;
+        top: 38px;
+        left: 11px;
+        border: 7px solid white;
+    }
+
+    .nav-desk {
+        display: none;
+    }
+
+    /* MENU HAMBURGER */
+    .side-menu {
+        display: none;
+        height: 50%;
+        width: 150px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        background-color: #ead6bb;
+        padding-top: 60px;
+        transition: left 0.5s ease;
+    }
+
+
+    .side-menu a {
+        padding: 25px 8px 8px 20px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 15px;
+        color: #7d5932;
+        display: block;
+        transition: 0.3s;
+        font-family: Montserrat;
+        font-weight: 600;
+    }
+
+    .side-menu ul {
+        list-style-type: none;
+        padding: 35px 0px 0px 0px;
+        margin: 0;
+    }
+
+
+    .side-menu.active {
+        right: 0px;
+        display: flex;
+    }
+
+    .side-menu .close {
+        position: absolute;
+        top: 28px;
+        right: 4px;
+        font-size: 30px;
+    }
+
+    #openBtn {
+        display: flex;
+        position: absolute;
+        top: 55px;
+        right: 10px;
+        font-size: 30px;
+        color: #7d5932;
+    }
+
+    /* SECTION MAIN */
+    .main-container {
+        padding: 0px;
+    }
+
+    main {
+        margin: 0px 20px;
+    }
+
+    /* SECTION MAIN TITLE */
+    h1 {
+        margin: 65px 0px 90px 70px;
+    }
+
+    /* SECTION MES SKILLS */
+
+    /* SECTION MON PARCOURS */
+
+    /* SECTION MES PROJETS */
+
+    .card-cover {
+        width: 100%;
+        height: 90px;
+        position: relative;
+        top: 20px;
+    }
+
+    #bookie-pic {
+        position: relative;
+        top: 0px;
+    }
+
+    #kasa-pic {
+        position: relative;
+        top: 0px;
+    }
+
+    #sophie_bluel-pic {
+        position: relative;
+        top: 0px;
+    }
+
+    #mon_vieux_grimoire-pic {
+        position: relative;
+        top: 0px;
+    }
+
+    #sophie_bluel-card {
+        background-color: #FFFEF8;
+    }
+
+    .projets span {
+        display: none;
+        justify-content: center;
+        font-size: 18px;
+        font-weight: bold;
+        color: #7d5932;
+        font-family: Montserrat;
+        line-height: 50px;
+
+    }
+
+    /* SECTION FOOTER */
+    footer {
+        flex-direction: column;
+
+    }
+
+    footer div {
+        width: 97%;
+    }
+
+
+}

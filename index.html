@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="script.js" defer></script>
+    <title>Mon portfolio</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <!-- SECTION HEADER -->
+        <header class='header' id="header">
+            <div class="profile-container">
+                <img class='profile' src="images/profile/profile_pic.jpg" alt='Profil'></img>
+            </div>
+            <nav class="nav-desk">
+                <ul>
+                    <li><a href="#main-title">Accueil</a></li>
+                    <li><a href="#skills-main-title">Compétences</a></li>
+                    <li><a href="#parcours-main-title">Parcours</a></li>
+                    <li><a href="#projets-main-title">Réalisations</a></li>
+                </ul>
+            </nav>
+            <!-- MENU HAMBURGER -->
+            <div id="sideMenu" class="side-menu">
+                <a id="closeBtn" href="#" class="close">
+                    <i class="fa-solid fa-xmark"></i>
+                </a>
+                <ul>
+                    <li><a href="#header">Accueil</a></li>
+                    <li><a href="#skills-main-title">Compétences</a></li>
+                    <li><a href="#parcours-main-title">Parcours</a></li>
+                    <li><a href="#projets-main-title">Réalisations</a></li>
+                </ul>
+            </div>
+            <a href="#" id="openBtn">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+        </header>
+        <!-- SECTION MAIN -->
+        <main>
+            <!-- MAIN TITLE -->
+            <h1>Pourquoi faire appel à moi ?</h1>
+            <!-- MES SKILLS -->
+            <section class="skills">
+                <h2 class="skills-main-title" id="skills-main-title">Mes compétences</h2>
+                <p>Au cours de ma formation professionnelle, j'ai appris à manipuler diverses technologies parmi
+                    lesquelles nous pouvons retrouver pour le Frontend :
+                    HTML/CSS, React/SCSS, les Frameworks css, ou encore FontAwesome et bien d'autres. Pour le Backend,
+                    nous pouvons retrouver les technologies suivantes : NodeJS - Express,
+                    MongoDB (mongoose), utilisation d'API...
+                </p>
+                <p>
+                    J'ai également été familiarisée avec différents outils tels
+                    que GitHub, Kanban, Feedly, ou encore Slack pour pouvoir communiquer avec mes coworkers.
+                </p>
+                <p>J'ai pu découvrir par le biais de différents projets l'ensemble des technologies susnommées, tout en
+                    mettant à
+                    l'épreuve ma capacité à travailler par moi-même en apprenant à chercher les informations manquantes
+                    quant à la
+                    réalisation de mes travaux.
+                </p>
+                <p>Parmi mes compétences actuelles, nous pouvons retrouver :
+                </p>
+                <p>
+                    • Travail en équipe et individuel <br>
+                    • Ingéniosité<br>
+                    • Curiosité<br>
+                    • Communication<br>
+                    • Méthodologie<br>
+                    • Rigueur
+                </p>
+            </section>
+            <!-- MON PARCOURS -->
+            <section class="parcours">
+                <h2 class="parcours-main-title" id="parcours-main-title"> Mon parcours</h2>
+                <p>Après l'obtention d'un Baccalauréat Littéraire en 2017, je me dirige vers une MANAA (Mise à Niveau en
+                    Arts Appliqués), ce qui me permet de découvrir le monde du design graphique via la suite Adobe.
+                </p>
+                <p>L'année suivante, je me dirige vers l'Architecture d'Intérieur sans y trouver ce qui m'attirait dans
+                    le design. Au-delà de l'art, j'ai toujours été très attirée par la linguistique et le fonctionnement
+                    des langues.
+                </p>
+                <p>Ainsi en 2019, j'ai décidé d'entreprendre une licence de Sciences du Langage qui m'a permis de
+                    découvrir le traitement automatique des langues qui a
+                    éveillé en moi une curiosité au niveau du langage informatique, du machine learning et du deep
+                    learning, que nous n’avons pu qu’évoquer.
+                <p>
+                    Je me suis alors renseignée et j’ai pu découvrir la richesse d’un domaine vers lequel je ne songeais
+                    initialement pas
+                    me tourner, et j'ai pu y entrevoir une passion pour l"informatique, la complexité de sa langue et de
+                    son milieu. Alors, je me suis tournée vers OpenClassrooms qui a pu m'ouvrir les portes de ce domaine
+                    qui m'attire tant.
+                </p>
+            </section>
+            <!-- PROJETS -->
+            <section class="projets">
+                <h2 class="projets-main-title" id="projets-main-title">Mes réalisations</h2>
+                <div class="projets-cards">
+                    <div class="projet">
+                        <a href="https://piamah.github.io/projet_2/" target="_blank" rel="noopener noreferrer"
+                            class="card">
+                            <img class="card-cover" id="bookie-pic" src="images/projets/booki.webp"
+                                alt="Projet Booki" />
+                            <span class="card-title">Booki - Agence de voyage</span>
+                        </a>
+                    </div>
+                    <div class="projet">
+                        <a href="https://piamah.github.io/projet_2/" target="_blank" rel="noopener noreferrer"
+                            class="card">
+                            <img class="card-cover" id="bookie-pic" src="images/projets/kasa.webp" alt="Projet Kasa" />
+                            <span class="card-title">Sophie Bluel - Architecte</span>
+                        </a>
+                    </div>
+                    <div class="projet">
+                        <a href="https://piamah.github.io/projet_2/" target="_blank" rel="noopener noreferrer"
+                            class="card" id="sophie_bluel-card">
+                            <img class="card-cover" id="sophie_bluel-pic" src="images/projets/sophie_bluel.webp"
+                                alt="Projet Sophie Bluel" />
+                            <span class="card-title">Kasa - Agence immobilière</span>
+                        </a>
+                    </div>
+                    <div class="projet">
+                        <a href="https://piamah.github.io/projet_2/" target="_blank" rel="noopener noreferrer"
+                            class="card">
+                            <img class="card-cover" id="mon_vieux_grimoire-pic"
+                                src="images/projets/mon_vieux_grimoire.webp" alt="Projet Mon Vieux Grimoire" />
+                            <span class="card-title">Le Vieux Grimoire - Site de notation de livres</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- SECTION FOOTER -->
+        <footer class='footer'>
+            <p>Contactez moi !</p>
+            <div class='logos'>
+                <a class="social-link" href="https://www.instagram.com/piama._/" target="_blank"
+                    rel="noopener noreferrer">
+                    <img class='logo-instagram' src="images/logos/logo_instagram.webp" alt='Logo Instagram'>
+                    </img>
+                </a>
+                <a class="social-link" href="https://www.linkedin.com/in/ath%C3%A9na%C3%AFs-lecomte/" target="_blank"
+                    rel="noopener noreferrer">
+                    <img class='logo-linkedin' src="images/logos/logo_linkedin.webp" alt='Logo Linkedin'>
+                    </img>
+                </a>
+                <a class='social-link' href="https://discord.gg/tAff53Cd4r" target="_blank" rel="noopener noreferrer">
+                    <img class='logo-discord' src="images/logos/logo_discord.webp" alt='Logo Discord'>
+                    </img>
+                </a>
+                <a class='social-link' href="https://github.com/Piamah" target="_blank" rel="noopener noreferrer">
+                    <img class='logo-github' src="images/logos/logo_github.webp" alt='Logo Github'>
+                    </img>
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

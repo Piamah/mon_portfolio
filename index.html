@@ -16,14 +16,7 @@
     <div class="main-container">
         <!-- SECTION HEADER -->
         <header class='header' id="header">
-            <img class='profile' id="profile-picture" src="images/profile/profile_pic.jpg" alt='Profil'></img>
-            <!-- TEST -->
-            <div class="dropdown">
-                <div class="dropdown-content">
-                    <p>TEST</p>
-                </div>
-            </div>
-            <!-- FIN DE TEST -->
+            <img class='profile' id="profile-picture" src="images/profile/profile_pic.jpg" alt='Profil' />
             <nav class="nav-desk">
                 <ul>
                     <li><a href="#header">Accueil</a></li>
@@ -34,7 +27,7 @@
             </nav>
             <!-- MENU HAMBURGER -->
             <div id="sideMenu" class="side-menu">
-                <a id="closeBtn" href="#" class="close">
+                <a id="closeBtn" href="#" class="close" aria-label="Fermer le menu">
                     <i class="fa-solid fa-xmark"></i>
                 </a>
                 <ul>
@@ -44,7 +37,7 @@
                     <li><a href="#projets-main-title">Réalisations</a></li>
                 </ul>
             </div>
-            <a href="#" id="openBtn">
+            <a href="#" id="openBtn" aria-label="Ouvrir le menu">
                 <i class="fa-solid fa-bars"></i>
             </a>
         </header>
@@ -96,6 +89,7 @@
                     découvrir le traitement automatique des langues qui a
                     éveillé en moi une curiosité au niveau du langage informatique, du machine learning et du deep
                     learning, que nous n’avons pu qu’évoquer.
+                </p>
                 <p>
                     Je me suis alors renseignée et j’ai pu découvrir la richesse d’un domaine vers lequel je ne songeais
                     initialement pas
@@ -107,6 +101,7 @@
             <!-- PROJETS -->
             <section class="projets">
                 <h2 class="projets-main-title" id="projets-main-title">Mes réalisations</h2>
+                <!-- BOOKIE -->
                 <div class="projets-cards">
                     <div class="projet">
                         <a href="https://piamah.github.io/projet_2/" target="_blank" rel="noopener noreferrer"
@@ -114,29 +109,89 @@
                             <img class="card-cover" id="bookie-pic" src="images/projets/booki.webp"
                                 alt="Projet Booki" />
                             <span class="card-title">Booki - Agence de voyage</span>
+                            <div class="dropdown">
+                                <p class="content-title">Scénario du projet : </p>
+                                <p class="content-txt">Booki est une agence de voyage qui m'a contactée afin de
+                                    développer leur site de
+                                    réservation de logements en ligne. Le but était principalement que
+                                    le site soit responsive tout en répondant aux exigences imposées par la maquette
+                                    Figma fournie.</p>
+                                <p class="content-title">Les problématiques rencontrées :</p>
+                                <p class="content-txt">Le principal obstacle aura été le CSS, qui a été relativement
+                                    complexe au début à
+                                    prendre en main.</p>
+                                <p class="content-title">Les compétences développées : </p>
+                                <p class="content-txt">Compréhension de la structure de HTML & CSS.</p>
+                            </div>
                         </a>
                     </div>
+                    <!-- SOPHIE BLUEL -->
                     <div class="projet">
-                        <a href="https://piamah.github.io/projet_2/" target="_blank" rel="noopener noreferrer"
-                            class="card">
-                            <img class="card-cover" id="bookie-pic" src="images/projets/kasa.webp" alt="Projet Kasa" />
-                            <span class="card-title">Sophie Bluel - Architecte</span>
-                        </a>
-                    </div>
-                    <div class="projet">
-                        <a href="https://piamah.github.io/projet_2/" target="_blank" rel="noopener noreferrer"
-                            class="card" id="sophie_bluel-card">
+                        <a href="https://github.com/Piamah/Portfolio-architecte-sophie-bluel" target="_blank"
+                            rel="noopener noreferrer" class="card" id="sophie_bluel-card">
                             <img class="card-cover" id="sophie_bluel-pic" src="images/projets/sophie_bluel.webp"
                                 alt="Projet Sophie Bluel" />
-                            <span class="card-title">Kasa - Agence immobilière</span>
+                            <span class="card-title">Sophie Bluel - Architecte</span>
+                            <div class="dropdown">
+                                <p class="content-title">Scénario du projet : </p>
+                                <p class="content-txt">Sophie Bluel est une architecte d'intérieur qui souhaitait créer
+                                    une page web
+                                    dynamique en utilisant
+                                    JavaScript et en communiquant avec une API</p>
+                                <p class="content-title">Les problématiques rencontrées :</p>
+                                <p class="content-txt">Découverte de JavaScript, création d'une page de connexion et
+                                    intégration d'une
+                                    modale</p>
+                                <p class="content-title">Les compétences développées : </p>
+                                <p class="content-txt">Début d'appréhension de la communication Frontend - Backend,
+                                    manipulation d'une API,
+                                    apprendre à travailler sur le Frontend
+                                    sans avoir travaillé le Back.</p>
+                            </div>
                         </a>
                     </div>
+                    <!-- KASA -->
                     <div class="projet">
-                        <a href="https://piamah.github.io/projet_2/" target="_blank" rel="noopener noreferrer"
+                        <a href="https://github.com/Piamah/projet_5" target="_blank" rel="noopener noreferrer"
+                            class="card">
+                            <img class="card-cover" id="bookie-pic" src="images/projets/kasa.webp" alt="Projet Kasa" />
+                            <span class="card-title">Kasa - Agence immobilière</span>
+                            <div class="dropdown">
+                                <p class="content-title">Scénario du projet : </p>
+                                <p class="content-txt">Kasa est une entreprise de location d’appartements entre
+                                    particuliers pour laquelle
+                                    j'ai travaillé en Freelance. Il fallait faire une refonte de site en React pour ma
+                                    part du travail.</p>
+                                <p class="content-title">Les problématiques rencontrées :</p>
+                                <p class="content-txt">Créer des dropdown et en animer l'apparition</p>
+                                <p class="content-title">Les compétences développées : </p>
+                                <p class="content-txt">Utilisation de React et découverte des librairies et de la
+                                    réutilisation des
+                                    composants.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- VIEUX GRIMOIRE -->
+                    <div class="projet">
+                        <a href="https://github.com/Piamah/projet_6" target="_blank" rel="noopener noreferrer"
                             class="card">
                             <img class="card-cover" id="mon_vieux_grimoire-pic"
                                 src="images/projets/mon_vieux_grimoire.webp" alt="Projet Mon Vieux Grimoire" />
-                            <span class="card-title">Le Vieux Grimoire - Site de notation de livres</span>
+                            <span class="card-title">Le Vieux Grimoire - Site de notation de
+                                livres</span>
+                            <div class="dropdown">
+                                <p class="content-title">Scénario du projet : </p>
+                                <p class="content-txt">"Mon Vieux Grimoire" est un site de notation de bouquin. Il
+                                    fallait développer ce
+                                    site en créant un serveur avec Express et le connecter à la BDD MongoDB.</p>
+                                <p class="content-title">Les problématiques rencontrées :</p>
+                                <p class="content-txt">Intégration des middlewares et compréhension de leur pertinence
+                                </p>
+                                <p class="content-title">Les compétences développées : </p>
+                                <p class="content-txt">Découverte du Green Code, optimisation des images, CRUD,
+                                    manipulation des routes,
+                                    création d'un login et gestion des données</p>
+                            </div>
                         </a>
                     </div>
                 </div>
@@ -144,25 +199,22 @@
         </main>
         <!-- SECTION FOOTER -->
         <footer class='footer'>
-            <span>Contactez moi !</span>
+            <a href="mailto:athelec@gmail.com" class="email">Contactez moi ! <i class="fa-solid fa-envelope"></i>
+            </a>
             <div class='logos'>
                 <a class="social-link" href="https://www.instagram.com/piama._/" target="_blank"
                     rel="noopener noreferrer">
-                    <img class='logo-instagram' src="images/logos/logo_instagram.webp" alt='Logo Instagram'>
-                    </img>
+                    <img class='logo-instagram' src="images/logos/logo_instagram.webp" alt='Logo Instagram' />
                 </a>
                 <a class="social-link" href="https://www.linkedin.com/in/ath%C3%A9na%C3%AFs-lecomte/" target="_blank"
                     rel="noopener noreferrer">
-                    <img class='logo-linkedin' src="images/logos/logo_linkedin.webp" alt='Logo Linkedin'>
-                    </img>
+                    <img class='logo-linkedin' src="images/logos/logo_linkedin.webp" alt='Logo Linkedin' />
                 </a>
                 <a class='social-link' href="https://discord.gg/tAff53Cd4r" target="_blank" rel="noopener noreferrer">
-                    <img class='logo-discord' src="images/logos/logo_discord.webp" alt='Logo Discord'>
-                    </img>
+                    <img class='logo-discord' src="images/logos/logo_discord.webp" alt='Logo Discord' />
                 </a>
                 <a class='social-link' href="https://github.com/Piamah" target="_blank" rel="noopener noreferrer">
-                    <img class='logo-github' src="images/logos/logo_github.webp" alt='Logo Github'>
-                    </img>
+                    <img class='logo-github' src="images/logos/logo_github.webp" alt='Logo Github' />
                 </a>
             </div>
         </footer>

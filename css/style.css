@@ -6,44 +6,6 @@ body {
     padding: 0;
 }
 
-/* TESTS */
-.profil-container {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown {
-    display: none;
-    position: absolute;
-    top: 120%;
-    /* Ajuste selon la taille de la photo */
-    left: 0;
-    background-color: white;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
-    z-index: 1;
-}
-
-.dropdown ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.dropdown ul li {
-    padding: 10px;
-}
-
-.dropdown ul li a {
-    text-decoration: none;
-    color: black;
-}
-
-.dropdown ul li:hover {
-    background-color: #f1f1f1;
-}
-
-
-/* A VOIR SI ON LAISSE */
 .main-container {
     width: 100%;
     max-width: 1440px;
@@ -65,10 +27,6 @@ a {
 
 .card img {
     object-fit: cover;
-}
-
-.card-title {
-    font-size: 16px;
 }
 
 h2 {
@@ -164,7 +122,7 @@ h1 {
     font-weight: 500;
 }
 
-/* SECTION ACTIVITES */
+/* SECTION PARCOURS */
 
 .parcours p {
     display: flex;
@@ -177,7 +135,6 @@ h1 {
 
 /* PROJETS */
 .projet {
-    /* width: 300px; */
     padding: 10px;
 }
 
@@ -193,7 +150,7 @@ h1 {
 }
 
 .card-cover {
-    display: none;
+    height: 340px;
 }
 
 .projet span {
@@ -205,6 +162,40 @@ h1 {
     font-family: Montserrat;
     line-height: 50px;
 }
+
+#sophie_bluel-card {
+    background-color: #FFFEF8;
+}
+
+/* DROPDOWN */
+
+.dropdown {
+    display: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.card:hover .dropdown {
+    display: block;
+}
+
+.content-title {
+    color: #7d5932;
+    font-family: Montserrat;
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: underline;
+    text-align: left;
+}
+
+.content-txt {
+    color: #7d5932;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: left;
+}
+
 
 /* SECTION FOOTER */
 
@@ -223,10 +214,12 @@ h1 {
 }
 
 footer a {
-    width: 15%;
-    display: flex;
-    justify-content: center;
-    gap: 15px
+    color: #7d5932;
+    text-decoration: overline;
+    position: relative;
+    margin: 15px 0px 0px 0px;
+    top: -10px;
+    left: 5px;
 }
 
 .logos {
@@ -252,14 +245,6 @@ footer a {
     width: 100%;
 }
 
-.footer span {
-    color: #7d5932;
-    text-decoration: overline;
-    position: relative;
-    margin: 30px 0px 30px 0px;
-    top: -10px;
-    left: 5px;
-}
 
 
 
@@ -299,6 +284,11 @@ footer a {
     /* SECTION PROJETS */
     .projet h1 {
         margin: 0px;
+    }
+
+    #sophie_bluel-pic {
+        position: relative;
+        right: 67px;
     }
 
     /* SECTION FOOTER */
@@ -422,15 +412,12 @@ footer a {
     #sophie_bluel-pic {
         position: relative;
         top: 0px;
+        right: 0px;
     }
 
     #mon_vieux_grimoire-pic {
         position: relative;
         top: 0px;
-    }
-
-    #sophie_bluel-card {
-        background-color: #FFFEF8;
     }
 
     .projets span {
